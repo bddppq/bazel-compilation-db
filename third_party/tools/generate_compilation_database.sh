@@ -7,7 +7,6 @@ set -e
 
 bazel build \
   --experimental_action_listener=//third_party/tools/generate_compile_commands:extract_json \
-  --noshow_progress \
   --noshow_loading_progress \
   "$@"
 
